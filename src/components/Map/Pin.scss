@@ -1,0 +1,74 @@
+@keyframes popIn {
+  from {
+    transform: scale(0) translate3d(50%, 100%, 0) rotate(-90deg);
+  }
+  to {
+    transform: scale(1) translate3d(0, 0, 0) rotate(0deg);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.pin {
+  display: none;
+  position: relative;
+
+  &:hover {
+    .pin__content {
+      display: inherit;
+      animation: fadeIn 0.2s ease-in-out;
+    }
+  }
+
+  &--show {
+    display: inherit;
+    animation: popIn 0.5s cubic-bezier(0.75, -0.5, 0, 1.75);
+  }
+
+  &__content {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+
+    img {
+      border-radius: 20px 20px 0 0;
+      max-width: 520px;
+      max-height: 480px;
+    }
+
+    p {
+      font-size: 24px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    &__container {
+      width: 180px;
+      padding: 16px;
+
+      h3 {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      p {
+        color: rgba(#333, 0.8);
+        font-size: 18px;
+        font-weight: normal;
+      }
+    }
+  }
+}

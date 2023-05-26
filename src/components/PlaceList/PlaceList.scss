@@ -1,0 +1,28 @@
+.place-list {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  background-color: white;
+  padding: 16px;
+  overflow-y: auto;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      max-height: 64px;
+    }
+
+    &:hover {
+      background-color: rgba(#333, 0.1);
+      cursor: pointer;
+    }
+  }
+}

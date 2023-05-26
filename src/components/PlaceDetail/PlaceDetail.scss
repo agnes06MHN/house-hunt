@@ -1,0 +1,39 @@
+.place-detail {
+  position: absolute;
+  padding: 64px 32px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 66%;
+  background-color: white;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -2px 0 10px rgba(#333, 0.25);
+  overflow-y: auto;
+
+  &__city {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 16px 0;
+  }
+
+  img {
+    width: 100%;
+    max-height: 480px;
+    border-radius: 10px;
+  }
+
+  p {
+    color: #333;
+  }
+
+  &__infos {
+    margin: 16px 0;
+    display: flex;
+    justify-content: space-evenly;
+
+    div {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+}
