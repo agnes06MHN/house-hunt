@@ -1,0 +1,18 @@
+GET https://seloger.p.rapidapi.com/locations/search?searchTerm=8 rue de l'artois, 91220
+headers:
+  X-RapidAPI-Host: seloger.p.rapidapi.com
+  X-RapidAPI-Key: 23c05b0539msh9a2233de9c0717dp1863dajsnff65aa1ebe9b
+
+###
+
+GET https://seloger.p.rapidapi.com/properties/list?zipCodes=91220
+headers:
+  X-RapidAPI-Host: seloger.p.rapidapi.com
+  X-RapidAPI-Key: 23c05b0539msh9a2233de9c0717dp1863dajsnff65aa1ebe9b
+
+###
+
+GET https://seloger.p.rapidapi.com/properties/list-in-boundary?zipCodes=91220
+headers:
+  X-RapidAPI-Host: seloger.p.rapidapi.com
+  X-RapidAPI-Key: 23c05b0539msh9a2233de9c0717dp1863dajsnff65aa1ebe9b
